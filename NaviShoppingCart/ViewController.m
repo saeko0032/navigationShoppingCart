@@ -60,8 +60,6 @@
     }
     
     cell.myImageView.image = [UIImage imageNamed:[self.itemsForSection1 objectAtIndex:indexPath.row]];
-    // cell.addButton.tag = indexPath.row;
-    // [cell.addButton addTarget:self action:@selector(selectView:) forControlEvents:UIControlEventTouchUpInside];
     return cell;
     
 }
@@ -72,7 +70,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 195;
+    return 165;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

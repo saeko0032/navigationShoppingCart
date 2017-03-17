@@ -23,7 +23,7 @@
 }
 
 - (IBAction)closeView:(UIButton *)sender {
-    [self.inputViewController dismissViewControllerAnimated:YES completion:NULL];
+    [self.inputViewController.view endEditing:YES];
 }
 
 @end

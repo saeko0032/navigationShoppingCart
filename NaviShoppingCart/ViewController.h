@@ -16,7 +16,6 @@
 @interface ViewController : UITableViewController<FoodViewControllerDelegate, DrinkViewControllerDelegate, ClothViewControllerDelegate, ShoppingCartViewControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *myTableView;
-@property (weak, nonatomic) IBOutlet UIView *myView;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (strong,nonatomic) ShoppingCart* shoppingCart;
 

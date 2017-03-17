@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-1121" y="-392"/>
         </scene>
-        <!--View Controller-->
+        <!--Shopping Cart-->
         <scene sceneID="Lr3-bU-gp0">
             <objects>
                 <tableViewController id="aJv-IT-pRV" customClass="ViewController" sceneMemberID="viewController">
@@ -33,22 +33,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="fxy-Sq-tGA">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;Shopping Cart&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gu-se-bVN">
-                                    <rect key="frame" x="105" y="23" width="165" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="Knc-lj-iD0">
-                            <rect key="frame" x="0.0" y="182" width="375" height="117"/>
+                            <rect key="frame" x="0.0" y="138" width="375" height="117"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxi-I2-t7B">
@@ -79,7 +65,7 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ImageAndCellReuse" rowHeight="110" id="9lP-6x-Y6F" customClass="ImageAndAddCell">
-                                <rect key="frame" x="0.0" y="72" width="375" height="110"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9lP-6x-Y6F" id="g38-0g-p0u">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
@@ -102,10 +88,9 @@
                             <outlet property="delegate" destination="aJv-IT-pRV" id="HiK-s0-hrH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qxO-W1-z3w"/>
+                    <navigationItem key="navigationItem" title="Shopping Cart" id="qxO-W1-z3w"/>
                     <connections>
                         <outlet property="myTableView" destination="hq0-v8-sLH" id="Wzy-p3-2Wg"/>
-                        <outlet property="myView" destination="Knc-lj-iD0" id="BIN-o1-UL6"/>
                         <outlet property="priceLabel" destination="gxi-I2-t7B" id="Sat-Et-llF"/>
                         <segue destination="bco-GV-Sea" kind="push" identifier="foodViewID" id="7Q1-Ud-OZp"/>
                         <segue destination="1G9-0E-fpJ" kind="push" identifier="clothViewID" id="0V9-op-X3K"/>
@@ -116,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="-244" y="-391"/>
         </scene>
-        <!--Food Table View Controller-->
+        <!--Food-->
         <scene sceneID="UR2-vl-GKf">
             <objects>
                 <tableViewController id="bco-GV-Sea" customClass="FoodTableViewController" sceneMemberID="viewController">
@@ -198,7 +183,7 @@
                             <outlet property="delegate" destination="bco-GV-Sea" id="6Jg-Jg-E7z"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="WsB-Wn-omH"/>
+                    <navigationItem key="navigationItem" title="Food" id="WsB-Wn-omH"/>
                     <connections>
                         <outlet property="myTableView" destination="1dU-gZ-CC9" id="tEh-hW-a3p"/>
                     </connections>
@@ -207,7 +192,7 @@
             </objects>
             <point key="canvasLocation" x="-321" y="-1112"/>
         </scene>
-        <!--Cloth Table View Controller-->
+        <!--Cloth-->
         <scene sceneID="f2n-pg-8JH">
             <objects>
                 <tableViewController id="1G9-0E-fpJ" customClass="ClothTableViewController" sceneMemberID="viewController">
@@ -280,7 +265,7 @@
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.92771965270000001" green="0.53165131809999999" blue="0.84223574400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.4392156862745098" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="cancelButton" destination="ZDN-vW-M9N" id="WGJ-hx-Je8"/>
                                     <outlet property="doneButton" destination="zWo-Va-ryT" id="8VV-7d-30m"/>
@@ -292,7 +277,7 @@
                             <outlet property="delegate" destination="1G9-0E-fpJ" id="vbW-10-M7Z"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="W4g-bW-b5J"/>
+                    <navigationItem key="navigationItem" title="Cloth" id="W4g-bW-b5J"/>
                     <connections>
                         <outlet property="myTableView" destination="um7-oy-gWp" id="2PT-wo-dvn"/>
                     </connections>
@@ -301,7 +286,7 @@
             </objects>
             <point key="canvasLocation" x="425" y="-1112"/>
         </scene>
-        <!--Drink Table View Controller-->
+        <!--Drink-->
         <scene sceneID="8E7-yq-s6B">
             <objects>
                 <tableViewController id="Jk8-Zo-m0I" customClass="DrinkTableViewController" sceneMemberID="viewController">
@@ -334,7 +319,7 @@
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="textFieldCellReuse" id="3S2-yL-IOW" customClass="TextFieldCell">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3S2-yL-IOW" id="lvu-JZ-1IJ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -387,7 +372,7 @@
                             <outlet property="delegate" destination="Jk8-Zo-m0I" id="7JJ-zg-uUg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="vWy-cm-sRj"/>
+                    <navigationItem key="navigationItem" title="Drink" id="vWy-cm-sRj"/>
                     <connections>
                         <outlet property="myTableView" destination="ODL-bk-S0Q" id="Lwj-Ra-fun"/>
                     </connections>
@@ -407,16 +392,6 @@
                         <view key="tableHeaderView" contentMode="scaleToFill" id="2Ci-hB-fEI">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxK-ew-jbX">
-                                    <rect key="frame" x="268" y="14" width="99" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="close"/>
-                                    <connections>
-                                        <action selector="closeView:" destination="Iub-Hz-eF3" eventType="touchUpInside" id="FBI-be-0wc"/>
-                                    </connections>
-                                </button>
-                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
